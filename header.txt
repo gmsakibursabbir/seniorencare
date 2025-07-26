@@ -1,0 +1,540 @@
+  <header class="bg-white py-2.5 sticky top-0 z-30 lg:shadow-none shadow-xl">
+      <!-- desktop nav -->
+      <div
+        class="container flex flex-row justify-between gap-5 lg:gap-8 items-center"
+      >
+        <a href="index.html"
+          ><img
+            src="./images/logo.svg"
+            alt="gembet"
+            class="xl:w-auto w-[116px]"
+        /></a>
+
+        <div class="md:hidden">
+          <button
+            class="justify-center text-text-body-primary text-xs font-medium font-Inter leading-none text-center flex flex-col gap-1"
+            data-mobile-menu-toggle=""
+          >
+            <img src="./images/menu.svg" alt="menu" />
+          </button>
+        </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-4 items-center">
+          <ul class="flex flex-row gap-5 lg:gap-8 items-center">
+            <li>
+              <a
+                href="./development.html"
+                class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1 hover:text-slate-500"
+                >Desarrollo</a
+              >
+            </li>
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500"
+                data-dropdown
+              >
+                Sector salud
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#425464"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./systems.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                    >
+                      Sistemas RIS y PACs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./partner.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                    >
+                      Growth partner
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./call-center.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                    >
+                      Call center
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500"
+                data-dropdown
+              >
+                Sector empresarial
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#425464"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-white rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./hardware.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                    >
+                      Hardware corporativo
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./soluciones.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                    >
+                      Provisión de tecnología 
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative dropdown group transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-1 gap-1 bg-slate-500 rounded-lg"
+                data-dropdown
+              >
+                Contáctanos
+              </button>
+              <div
+                class="dropdown-menu dropdown-content absolute group-hover:!block transition-all right-0 w-[350px] p-3 bg-white rounded-xl shadow-custom"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="mailto:+52 664 980 03 03"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="">
+                        <img src="./images/call.svg" alt="call" />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Atención telefónica</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >+52 (664) 980 03 03</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://wa.link/tjyxcl"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="">
+                        <img
+                          src="./images/whatsapp-dropdown.svg"
+                          alt="whatsapp"
+                        />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >WhatsApp</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >+52 (664) 980 03 03</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@soe.com.mx"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="">
+                        <img src="./images/mail-dropdown.svg" alt="mail" />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Enviar mensaje</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >info@soe.com.mx</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="">
+                        <img
+                          src="./images/location-dropdown.svg"
+                          alt="location"
+                        />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Dirección</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >Calle Ejemplo #123, Tijuana, B.C.</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Offcanvas -->
+      <div
+        class="offcanvas fixed inset-0 bg-white bg-opacity-50 h-screen overflow-y-auto z-50 md:hidden"
+        id="mobileMenu"
+      >
+        <div class="bg-white w-full max-w-full h-full py-4 relative">
+          <div class="flex flex-row items-center justify-between px-4">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" class="w-[120px]" />
+            </a>
+            <button class="cursor-pointer" data-close-mobile>
+              <img src="./images/close.svg" alt="close" />
+            </button>
+          </div>
+          <div class="mt-5 px-4">
+            <nav class="flex space-x-4 items-center">
+              <ul class="flex flex-col gap-5">
+                <li class="flex flex-col justify-start text-start">
+                  <a
+                    href="./development.html"
+                    class="text-slate-800 text-base lg:text-lg font-medium leading-7 transition-all px-1.5 py-1 hover:text-slate-500"
+                    >Desarrollo</a
+                  >
+                </li>
+
+                <li
+                  class="relative dropdown transition-all flex flex-col justify-start"
+                >
+                  <button
+                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500"
+                    data-dropdown
+                  >
+                    Sector salud
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="transition-all"
+                    >
+                      <path
+                        d="M4 6L8 10L12 6"
+                        stroke="#425464"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
+                  >
+                    <ul class="flex flex-col">
+                      <li>
+                        <a
+                          href="./systems.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                        >
+                          Sistemas RIS y PACs
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="./partner.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                        >
+                          Growth partner
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./call-center.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                        >
+                          Call center
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="relative dropdown transition-all flex flex-col justify-start"
+                >
+                  <button
+                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-slate-800 text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-slate-500"
+                    data-dropdown
+                  >
+                    Sector empresarial
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="transition-all"
+                    >
+                      <path
+                        d="M4 6L8 10L12 6"
+                        stroke="#425464"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-content transition-all w-full p-3 bg-white rounded-xl"
+                  >
+                    <ul class="flex flex-col">
+                      <li>
+                        <a
+                          href="./hardware.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                        >
+                          Hardware corporativo
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="./soluciones.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300 text-slate-800 text-base lg:text-lg font-medium leading-7"
+                        >
+                          Provisión de tecnología 
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="pt-6">
+            <div class="border-b border-[#E7EAEC]"></div>
+            <div class="px-4 py-6 flex flex-row justify-around">
+              <ul class="space-y-3">
+                <li class="flex flex-row gap-1 items-center">
+                  <img src="./images/list-menu.svg" alt="recursos" />
+                  <h4
+                    class="text-basic-black text-base font-DMSans font-medium"
+                  >
+                    Recursos
+                  </h4>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >Casos de éxito</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >Únete a SOE</a
+                  >
+                </li>
+              </ul>
+              <ul class="space-y-3">
+                <li class="flex flex-row gap-1 items-center">
+                  <img src="./images/shield-menu.svg" alt="recursos" />
+                  <h4
+                    class="text-basic-black text-base font-DMSans font-medium"
+                  >
+                    Aviso legal
+                  </h4>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >Aviso de privacidad</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-basic-black text-sm font-DMSans font-normal"
+                    >Términos y condiciones</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="px-4">
+              <a
+                href="./contactanos.html"
+                class="flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-2 lg:px-4 py-[10px] gap-1 bg-slate-500 rounded-lg"
+              >
+                Contáctanos
+              </a>
+              <div class="pt-6">
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="mailto:+52 664 980 03 03"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="mt-1">
+                        <img src="./images/call.svg" alt="call" />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Atención telefónica</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >+52 (664) 980 03 03</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://wa.link/tjyxcl"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="mt-1">
+                        <img
+                          src="./images/whatsapp-dropdown.svg"
+                          alt="whatsapp"
+                        />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >WhatsApp</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >+52 (664) 980 03 03</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@soe.com.mx"
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="mt-1">
+                        <img src="./images/mail-dropdown.svg" alt="mail" />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Enviar mensaje</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >info@soe.com.mx</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="flex flex-row gap-3 p-3 hover:bg-zinc-200 rounded-lg transition-all duration-300"
+                    >
+                      <span class="mt-1">
+                        <img
+                          src="./images/location-dropdown.svg"
+                          alt="location"
+                        />
+                      </span>
+                      <span class="flex flex-col">
+                        <span
+                          class="text-slate-800 text-base lg:text-lg font-medium leading-7"
+                          >Dirección</span
+                        >
+                        <span
+                          class="text-slate-600 text-base lg:text-lg font-normal leading-7"
+                          >Calle Ejemplo #123, Tijuana, B.C.</span
+                        >
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>

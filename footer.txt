@@ -1,0 +1,212 @@
+  <footer
+      class="bg-zinc-200 bg-[url('../images/shape-footer.svg')] bg-no-repeat bg-right-top"
+    >
+      <div
+        class="container pt-24 pb-12 grid lg:grid-cols-12 sm:grid-cols-3 grid-cols-2 lg:gap-6 gap-y-12 gap-x-3"
+      >
+        <!-- single item start  -->
+        <div class="xl:col-span-4 sm:col-span-3 col-span-2 flex flex-col gap-9">
+          <div>
+            <a href="">
+              <img src="./images/logo.svg" alt="soe-logo" />
+            </a>
+          </div>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                href="mailto:info@soe.com.mx"
+                class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 transition-colors duration-300"
+              >
+                <span>
+                  <img src="images/mail.svg" alt="mail" />
+                </span>
+                <span> info@soe.com.mx</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href=""
+                class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 transition-colors duration-300"
+              >
+                <span>
+                  <img src="images/location.svg" alt="location" />
+                </span>
+                <span> Calle Ejemplo #123, Tijuana, B.C.</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+52 664 980 03 03"
+                class="flex flex-row items-center gap-1.5 text-slate-800 text-base font-normal leading-normal hover:text-slate-500 transition-colors duration-300"
+              >
+                <span>
+                  <img src="images/phone.svg" alt="phone" />
+                </span>
+                <span> +52 (664) 980 03 03</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- single item end -->
+
+        <!-- Enlaces rápidos -->
+        <div class="lg:col-span-3 col-span-1">
+          <h4
+            class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal"
+          >
+            <img src="./images/link.svg" alt="link" />
+            Enlaces rápidos
+          </h4>
+          <ul class="mt-4 space-y-2 pl-8">
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Desarrollo</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Sistemas RIS y PACs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Growth partner</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Call center</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Hardware corporativo</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Provisión de tecnología</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Recursos -->
+        <div class="lg:col-span-3 col-span-1">
+          <h4
+            class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal"
+          >
+            <img src="./images/recursos.svg" alt="recursos" />
+            Recursos
+          </h4>
+          <ul class="mt-4 space-y-2 pl-8">
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Casos de éxito</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Únete a SOE</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Soporte técnico</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Aviso legal -->
+        <div class="lg:col-span-2 col-span-1">
+          <h4
+            class="flex items-center gap-2 text-slate-800 text-lg font-semibold font-Inter leading-normal"
+          >
+            <img src="./images/shield-tick.svg" alt="shield-tick" />
+            Aviso legal
+          </h4>
+          <ul class="mt-4 space-y-2 pl-8">
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Aviso de privacidad</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Política de cookies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-slate-600 text-base hover:text-slate-500 transition-colors duration-300"
+                >Términos y condiciones</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright start  -->
+      <div class="py-12 bg-cyan-900 border-t border-gray-200">
+        <div
+          class="container flex flex-row flex-wrap md:justify-between justify-center gap-6 md:text-start text-center items-center"
+        >
+          <p class="text-gray-200 text-sm font-normal leading-tight">
+            © <span id="year"></span> SOE - Software Empresarial. Todos los
+            derechos reservados.
+          </p>
+          <ul
+            class="flex flex-row gap-6 items-center md:justify-start justify-center md:m-0 m-auto"
+          >
+            <li>
+              <a href=""><img src="./images/facebook.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/twitter.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/tiktok.svg" alt="tiktok" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright end -->
+    </footer>

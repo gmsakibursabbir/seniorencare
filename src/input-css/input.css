@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@theme {
+  --font-DMSans: "DM Sans", sans-serif;
+  --font-Inter: "Inter", sans-serif;
+  --font-ClashDisplay: "ClashDisplay";
+  --font-avenir: "Avenir";
+
+  --breakpoint-xsm: 370px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1216px;
+  --breakpoint-2xl: 1536px;
+
+  --container-xsm: 100%;
+  --container-sm: 100%;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-padding: 24px;
+
+  --color-primary-dark: #5b486a;
+  --color-primary-light: #83679a;
+  --color-black-text: #5b5b68;
+  --color-secondary: #eeebe7;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+@media (min-width: var(--screen-xsm)) {
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+
+@media (min-width: var(--screen-sm)) {
+  .container {
+    max-width: var(--container-md);
+  }
+}
+
+@media (min-width: var(--screen-md)) {
+  .container {
+    max-width: var(--container-lg);
+  }
+}
+
+@media (min-width: var(--screen-lg)) {
+  .container {
+    max-width: var(--container-xl);
+  }
+}
+@media (min-width: var(--screen-xl)) {
+  .container {
+    max-width: var(--container-2xl);
+  }
+}
+
+body {
+  font-family: var(--font-avenir);
+  background-color: var(--color-secondary);
+}
+.bg-80 {
+  background-size: 80%;
+}
+
+/* Medium screens (Tablet) */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
