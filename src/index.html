@@ -13,9 +13,8 @@
     <!-- swiper css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
-
     <!-- custom font start  -->
     <link rel="stylesheet" href="./fonts/avenir/font.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -405,7 +404,7 @@
                     class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
                     data-dropdown
                   >
-                   Unser Angebot
+                    Unser Angebot
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -462,7 +461,7 @@
                     class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
                     data-dropdown
                   >
-                   Über uns
+                    Über uns
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -1439,91 +1438,86 @@
           </h2>
         </div>
 
-        <div class="relative px-6 lg:px-0">
-          <div class="swiper testimonialsSwiper">
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div
-                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
-              >
-                <div
-                  class="flex flex-col items-center justify-center text-center h-full"
+        <div class="relative">
+          <div class="splide testimonialsSplide  lg:px-0">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li
+                  class="splide__slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
                 >
-                  <!-- Placeholder for avater.png -->
-                  <img
-                    src="./img/avater.png"
-                    class="w-[160px] h-[160px] rounded-full"
-                    alt="Avatar"
-                  />
-                  <h3
-                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  <div
+                    class="flex flex-col items-center justify-center text-center h-full"
                   >
-                    «Endlich konnte ich mich als Sohn wieder Sohn fühlen – nicht
-                    nur Pflegender.»
-                  </h3>
-                  <p class="text-base text-black leading-[26px]">
-                    Hansueli Gerber, Bern
-                  </p>
-                </div>
-              </div>
-              <!-- Slide 2 -->
-              <div
-                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
-              >
-                <div
-                  class="flex flex-col items-center justify-center text-center h-full"
+                    <img
+                      src="./img/avater.png"
+                      class="w-[160px] h-[160px] rounded-full"
+                      alt="Avatar"
+                    />
+                    <h3
+                      class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                    >
+                      «Endlich konnte ich mich als Sohn wieder Sohn fühlen –
+                      nicht nur Pflegender.»
+                    </h3>
+                    <p class="text-base text-black leading-[26px]">
+                      Hansueli Gerber, Bern
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="splide__slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
                 >
-                  <!-- Placeholder for avater-1.png -->
-                  <img
-                    src="./img/avater-1.png"
-                    class="w-[160px] h-[160px] rounded-full"
-                    alt="Avatar"
-                  />
-                  <h3
-                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  <div
+                    class="flex flex-col items-center justify-center text-center h-full"
                   >
-                    «Die Betreuung war menschlich und professionell – genau das,
-                    was wir gebraucht haben.»
-                  </h3>
-                  <p class="text-base text-black leading-[26px]">
-                    Peter Amstutz, Zürich
-                  </p>
-                </div>
-              </div>
-              <!-- Slide 3 -->
-              <div
-                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
-              >
-                <div
-                  class="flex flex-col items-center justify-center text-center h-full"
+                    <img
+                      src="./img/avater-1.png"
+                      class="w-[160px] h-[160px] rounded-full"
+                      alt="Avatar"
+                    />
+                    <h3
+                      class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                    >
+                      «Die Betreuung war menschlich und professionell – genau
+                      das, was wir gebraucht haben.»
+                    </h3>
+                    <p class="text-base text-black leading-[26px]">
+                      Peter Amstutz, Zürich
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="splide__slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
                 >
-                  <!-- Placeholder for avater-2.png -->
-                  <img
-                    src="./img/avater-2.png"
-                    class="w-[160px] h-[160px] rounded-full"
-                    alt="Avatar"
-                  />
-                  <h3
-                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  <div
+                    class="flex flex-col items-center justify-center text-center h-full"
                   >
-                    «Wir waren anfangs skeptisch – heute sind wir einfach nur
-                    dankbar.»
-                  </h3>
-                  <p class="text-base text-black leading-[26px]">
-                    Familie Meyer, Zürich
-                  </p>
-                </div>
-              </div>
+                    <img
+                      src="./img/avater-2.png"
+                      class="w-[160px] h-[160px] rounded-full"
+                      alt="Avatar"
+                    />
+                    <h3
+                      class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                    >
+                      «Wir waren anfangs skeptisch – heute sind wir einfach nur
+                      dankbar.»
+                    </h3>
+                    <p class="text-base text-black leading-[26px]">
+                      Familie Meyer, Zürich
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- Pagination -->
-        <div
-          class="custom-pagination mt-6 flex items-center justify-center gap-1"
-        ></div>
+        <!-- Your HTML pagination container -->
+        <div class="custom-pagination mt-6 flex items-center justify-center">
+          <ul class="splide__pagination flex gap-2"></ul>
+        </div>
       </section>
-
       <!-- review end -->
     </main>
     <!-- main end -->
@@ -1585,7 +1579,7 @@
             <li>
               <a
                 href="tel:+41 43 300 51 43"
-                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px]  min-w-[300px]"
+                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px] min-w-[300px]"
                 ><div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1609,7 +1603,7 @@
             <li>
               <a
                 href="#"
-                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px]  min-w-[300px]"
+                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px] min-w-[300px]"
                 ><div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1672,121 +1666,7 @@
       </div>
     </footer>
     <!-- footer end -->
-    <script>
-      // Swiper slider initialization
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Swiper for testimonials
-        new Swiper(".testimonialsSwiper", {
-          slidesPerView: "auto",
-          centeredSlides: true,
-          loop: true,
-          spaceBetween: 32,
-          autoSlide: 3000,
-          pagination: {
-            el: ".custom-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              spaceBetween: 32,
-            },
-            1024: {
-              spaceBetween: 32,
-            },
-          },
-        });
-      });
-    </script>
-    <script>
-      // curent year
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // preloader
-      window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader");
-        const content = document.getElementById("content");
-
-        // Add animation class
-        preloader.classList.add("hide-preloader");
-
-        // Fade in content
-        // content.classList.remove('opacity-0');
-
-        // Fully remove preloader after animation
-        setTimeout(() => {
-          preloader.remove(); // Or use: preloader.style.display = 'none';
-          document.body.classList.remove("overflow-hidden");
-        }, 800); // Match animation duration
-      });
-      //Header
-      // Reusable Dropdown Logic
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropdownButtons = document.querySelectorAll("[data-dropdown]");
-        const isTouchDevice =
-          "ontouchstart" in window || navigator.maxTouchPoints > 0;
-
-        // ✅ Hover logic (Desktop only)
-        if (!isTouchDevice) {
-          dropdownButtons.forEach((button) => {
-            const parent = button.closest(".dropdown");
-            const menu = parent.querySelector(".dropdown-menu");
-
-            parent.addEventListener("mouseenter", () => {
-              parent.classList.add("showDropdown");
-              menu.classList.add("show");
-            });
-
-            parent.addEventListener("mouseleave", () => {
-              parent.classList.remove("showDropdown");
-              menu.classList.remove("show");
-            });
-          });
-        }
-
-        // ✅ Click logic (Always enabled)
-        document.addEventListener("click", function (e) {
-          const isDropdownBtn = e.target.closest("[data-dropdown]");
-          const isInsideDropdown = e.target.closest(".dropdown");
-          const allMenus = document.querySelectorAll(".dropdown-menu");
-          const allDropdowns = document.querySelectorAll(".dropdown");
-
-          if (isDropdownBtn) {
-            const parent = isDropdownBtn.closest(".dropdown");
-            const menu = parent.querySelector(".dropdown-menu");
-
-            allMenus.forEach((m) => {
-              if (m !== menu) m.classList.remove("show");
-            });
-
-            allDropdowns.forEach((d) => {
-              if (d !== parent) d.classList.remove("showDropdown");
-            });
-
-            parent.classList.toggle("showDropdown");
-            menu.classList.toggle("show");
-          } else if (!isInsideDropdown) {
-            allMenus.forEach((m) => m.classList.remove("show"));
-            allDropdowns.forEach((d) => d.classList.remove("showDropdown"));
-          }
-        });
-      });
-
-      // Mobile Menu Toggle
-      const mobileToggleBtn = document.querySelector(
-        "[data-mobile-menu-toggle]"
-      );
-      const mobileMenu = document.getElementById("mobileMenu");
-      const closeMobileBtn = document.querySelector("[data-close-mobile]");
-
-      mobileToggleBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("offcanvas-open");
-      });
-
-      closeMobileBtn.addEventListener("click", () => {
-        mobileMenu.classList.remove("offcanvas-open");
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

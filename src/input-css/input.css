@@ -74,21 +74,21 @@ body {
     padding-right: 24px;
   }
 }
-.custom-pagination .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  background-color: #83679a;
-  opacity: 1; /* ensure fully visible */
-  transition: all 0.3s ease;
-  margin: 0 6px;
+/* Styling for the pagination bullets themselves */
+
+.splide.testimonialsSplide {
+  height: 450px;
 }
 
-.custom-pagination .swiper-pagination-bullet-active {
-  width: 16px;
-  height: 16px;
-  background-color: var(--color-primary-dark);
+.splide__track,
+.splide__list,
+.splide__slide {
+  height: 100%;
 }
 
+.splide__slide > div {
+  height: 100%;
+}
 .offcanvas {
   transition: transform 0.3s ease-in-out;
   transform: translateX(-100%);
@@ -129,12 +129,31 @@ body {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
- /* Swiper specific styles for equal height */
-        .swiper-wrapper {
-            align-items: stretch; /* Ensures all slides stretch to the height of the tallest slide */
-        }
+/* Swiper specific styles for equal height */
+.swiper-wrapper {
+  align-items: stretch; /* Ensures all slides stretch to the height of the tallest slide */
+}
 
-        /* Ensure swiper-slide takes full height of its stretched parent */
-        .swiper-slide {
-            height: auto; /* Allow height to be determined by content and stretching */
-        }
+/* Ensure swiper-slide takes full height of its stretched parent */
+.swiper-slide {
+  height: auto; /* Allow height to be determined by content and stretching */
+}
+
+.splide__pagination__page.is-active {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary-light);
+  opacity: 1;
+  transform: scale(1);
+}
+.splide__pagination__page {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary-light);
+  opacity: 0.5;
+  transform: scale(1);
+}
+.splide__pagination {
+  gap: 4px;
+  bottom: -2.5em;
+}

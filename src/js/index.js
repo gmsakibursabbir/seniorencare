@@ -261,3 +261,21 @@ document.addEventListener("DOMContentLoaded", function () {
     showNotification();
   }
 });
+
+//slider
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".testimonialsSplide", {
+    type: "loop",
+    autoWidth: true,
+    focus: "center",
+    gap: "32px",
+    autoplay: true,
+    interval: 3000,
+    pauseOnHover: true,
+    arrows: false,
+    pagination: {
+      el: ".custom-pagination",
+    },
+  }).mount();
+});
