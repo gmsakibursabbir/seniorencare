@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOE</title>
+    <title>Seniorencare</title>
 
     <!-- favicon  -->
 
     <!-- google font  -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" />
 
     <!-- swiper css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <!-- custom font start  -->
     <link rel="stylesheet" href="./fonts/avenir/font.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -21,37 +23,659 @@
 
   <body class="">
     <!-- header start -->
+    <header
+      id="mainHeader"
+      class="bg-transparent py-[20px] lg:py-[32px] sticky top-0 z-30 transition-all duration-300 ease-in-out"
+    >
+      <!-- desktop nav -->
+      <div
+        class="px-6 lg:px-[40px] flex flex-row justify-between gap-5 lg:gap-8 items-center"
+      >
+        <a href="./index.html">
+          <!-- Placeholder for logo.png -->
+          <img
+            src="./img/logo.png"
+            alt="Logo"
+            class="max-w-[210px] lg:max-w-[292px] rounded-md"
+          />
+        </a>
+
+        <div class="lg:hidden">
+          <button
+            class="justify-center text-text-body-primary text-xs font-medium font-Inter leading-none text-center flex flex-col gap-1"
+            data-mobile-menu-toggle=""
+          >
+            <!-- Placeholder for menu.svg -->
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="13.5"
+                viewBox="0 0 28 13.5"
+              >
+                <g
+                  id="Group_443"
+                  data-name="Group 443"
+                  transform="translate(3410 21759.75)"
+                  class="fill-white"
+                >
+                  <path
+                    id="Path_702"
+                    data-name="Path 702"
+                    d="M96,297.5a1.5,1.5,0,0,1,1.5-1.5h25a1.5,1.5,0,0,1,0,3h-25A1.5,1.5,0,0,1,96,297.5ZM124,308a1.5,1.5,0,0,1-1.5,1.5h-25a1.5,1.5,0,0,1,0-3h25A1.5,1.5,0,0,1,124,308Z"
+                    transform="translate(-3506 -22055.75)"
+                    fill="#fff"
+                  />
+                </g>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex space-x-4 items-center">
+          <ul class="flex flex-row gap-5 lg:gap-[40px] items-center">
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                data-dropdown
+              >
+                Sector salud
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#fff"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./systems.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 1
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./partner.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./call-center.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                data-dropdown
+              >
+                Unser Angebot
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#fff"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./systems.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 1
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./partner.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./call-center.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                data-dropdown
+              >
+                Über uns
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#fff"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./systems.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 1
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./partner.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./call-center.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative dropdown transition-all">
+              <button
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                data-dropdown
+              >
+                Wissenswertes
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="transition-all"
+                >
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="#fff"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+              >
+                <ul class="flex flex-col">
+                  <li>
+                    <a
+                      href="./systems.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 1
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./partner.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./call-center.html"
+                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                    >
+                      demo 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="flex flex-row gap-4 items-center">
+              <a
+                href="mailto:"
+                class="hover:scale-110 transition-transform duration-300"
+                ><img
+                  src="./img/envelop.png"
+                  alt="envelop"
+                  class="max-w-[40px]"
+              /></a>
+              <a
+                href="tel:"
+                class="hover:scale-110 transition-transform duration-300"
+                ><img src="./img/phone.png" alt="phone" class="max-w-[40px]"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Offcanvas Menu -->
+      <div
+        class="offcanvas fixed inset-0 bg-primary-light bg-opacity-50 h-screen overflow-y-auto z-50 lg:hidden"
+        id="mobileMenu"
+      >
+        <div class="bg-primary-light w-full max-w-full h-full py-4 relative">
+          <div class="flex flex-row items-center justify-between px-4">
+            <a href="#">
+              <!-- Placeholder for logo.svg -->
+              <img
+                src="./img/logo.png"
+                alt="logo"
+                class="w-[210px] rounded-md"
+              />
+            </a>
+            <button class="cursor-pointer" data-close-mobile>
+              <!-- Placeholder for close.svg -->
+              <img
+                src="./img/close.svg"
+                alt="close"
+                class="rounded-md w-[28px]"
+              />
+            </button>
+          </div>
+          <div class="mt-5 px-4">
+            <nav class="flex space-x-4 items-center">
+              <ul class="flex flex-col gap-5">
+                <li
+                  class="relative dropdown transition-all flex flex-col justify-start"
+                >
+                  <button
+                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
+                    data-dropdown
+                  >
+                    Betreuung zu Hause
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="transition-all"
+                    >
+                      <path
+                        d="M4 6L8 10L12 6"
+                        stroke="#fff"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
+                  >
+                    <ul class="flex flex-col">
+                      <li>
+                        <a
+                          href="./systems.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 1
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="./partner.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./call-center.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="relative dropdown transition-all flex flex-col justify-start"
+                >
+                  <button
+                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
+                    data-dropdown
+                  >
+                   Unser Angebot
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="transition-all"
+                    >
+                      <path
+                        d="M4 6L8 10L12 6"
+                        stroke="#fff"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
+                  >
+                    <ul class="flex flex-col">
+                      <li>
+                        <a
+                          href="./systems.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 1
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="./partner.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./call-center.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="relative dropdown transition-all flex flex-col justify-start"
+                >
+                  <button
+                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
+                    data-dropdown
+                  >
+                   Über uns
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="transition-all"
+                    >
+                      <path
+                        d="M4 6L8 10L12 6"
+                        stroke="#fff"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
+                  >
+                    <ul class="flex flex-col">
+                      <li>
+                        <a
+                          href="./systems.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 1
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="./partner.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="./call-center.html"
+                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                        >
+                          demo 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- header end -->
+    <!-- box start -->
+    <!-- Floating Chat Button and Notification -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+      <div
+        id="chatNotification"
+        class="bg-white rounded-lg p-4 mb-2.5 shadow-lg max-w-[250px] text-start opacity-0 invisible translate-y-2.5 transition-all duration-300 ease-out text-base text-primary-dark"
+      >
+        Unverbindlich testen, in Ruhe entscheiden – bei Ihnen daheim.
+      </div>
+      <button
+        id="chatButton"
+        class="bg-primary-light text-white rounded-full min-w-[88px] min-h-[88px] flex justify-center items-center cursor-pointer shadow-lg transition-all duration-300 ease-in-out hover:bg-primary-light hover:-translate-y-0.5"
+      >
+        <!-- SVG for chat icon (question mark and plus sign) -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="51.334"
+          height="44"
+          viewBox="0 0 51.334 44"
+        >
+          <defs>
+            <clipPath id="clip-path">
+              <rect
+                id="Rectangle_678"
+                data-name="Rectangle 678"
+                width="51.333"
+                height="44"
+                fill="#fff"
+              />
+            </clipPath>
+          </defs>
+          <g
+            id="Group_434"
+            data-name="Group 434"
+            transform="translate(-1610.334 -831)"
+          >
+            <g
+              id="Group_286"
+              data-name="Group 286"
+              transform="translate(18831 21508)"
+            >
+              <g
+                id="Group_282"
+                data-name="Group 282"
+                transform="translate(-17220.666 -20677)"
+              >
+                <g
+                  id="Group_281"
+                  data-name="Group 281"
+                  clip-path="url(#clip-path)"
+                >
+                  <path
+                    id="Path_551"
+                    data-name="Path 551"
+                    d="M11.917,23.834a2.751,2.751,0,0,0-2.75-2.75h-5.5a.919.919,0,0,1-.917-.917V3.667a.919.919,0,0,1,.917-.917h22a.919.919,0,0,1,.917.917v16.5a.919.919,0,0,1-.917.917H17.72a2.759,2.759,0,0,0-1.65.55l-4.153,3.117ZM11.905,28.2l.011-.011,5.8-4.354h7.947a3.67,3.67,0,0,0,3.667-3.667V3.667A3.67,3.67,0,0,0,25.667,0h-22A3.67,3.67,0,0,0,0,3.667v16.5a3.67,3.67,0,0,0,3.667,3.667h5.5v4.583a.912.912,0,0,0,.5.819.927.927,0,0,0,.962-.086l.98-.733ZM9.728,6.72l-.023.069a1.374,1.374,0,0,0,2.589.917l.023-.069a.456.456,0,0,1,.43-.3h3.34a.865.865,0,0,1,.43,1.616L13.979,10.4a1.372,1.372,0,0,0-.693,1.192v.773a1.375,1.375,0,1,0,2.75.023l1.85-1.06a3.618,3.618,0,0,0-1.8-6.755h-3.34A3.212,3.212,0,0,0,9.723,6.715Zm6.772,10.7a1.833,1.833,0,1,0-1.833,1.833A1.833,1.833,0,0,0,16.5,17.417"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_552"
+                    data-name="Path 552"
+                    d="M403.27,285.333a.936.936,0,0,1-.554-.182l-.98-.733-.292-.218-.011-.011-5.8-4.354h-7.947a3.666,3.666,0,0,1-3.667-3.667v-7.562a.688.688,0,0,1,.687-.687h1.374a.688.688,0,0,1,.687.687v7.563a.906.906,0,0,0,.072.356.926.926,0,0,0,.488.488.906.906,0,0,0,.356.072h7.947a2.759,2.759,0,0,1,1.65.55l4.153,3.117v-.917a2.748,2.748,0,0,1,2.747-2.75h5.5a.906.906,0,0,0,.356-.072.926.926,0,0,0,.488-.488.905.905,0,0,0,.072-.356v-16.5a.906.906,0,0,0-.072-.356.926.926,0,0,0-.488-.488.9.9,0,0,0-.355-.072h-14.9a.687.687,0,0,1-.687-.687v-1.37a.687.687,0,0,1,.687-.687l14.9-.006a3.647,3.647,0,0,1,2.049.627,3.685,3.685,0,0,1,1.329,1.614,3.637,3.637,0,0,1,.289,1.426v16.5a3.666,3.666,0,0,1-3.667,3.667h-5.5v4.583a.912.912,0,0,1-.913.916m-3.67-11.916h-1.833a.906.906,0,0,1-.356-.072.926.926,0,0,1-.488-.488.906.906,0,0,1-.072-.356v-2.75H394.1a.906.906,0,0,1-.356-.072.926.926,0,0,1-.488-.488.905.905,0,0,1-.072-.356V267a.905.905,0,0,1,.072-.356.926.926,0,0,1,.488-.488.906.906,0,0,1,.356-.072h2.75v-2.75a.906.906,0,0,1,.072-.356.927.927,0,0,1,.743-.556.837.837,0,0,1,.1,0H399.6a.906.906,0,0,1,.356.072.926.926,0,0,1,.488.488.906.906,0,0,1,.072.356v2.75h2.75a.906.906,0,0,1,.356.072.926.926,0,0,1,.488.488.905.905,0,0,1,.072.356v1.833a.905.905,0,0,1-.072.356.926.926,0,0,1-.488.488.905.905,0,0,1-.356.072h-2.75v2.75a.906.906,0,0,1-.072.356.927.927,0,0,1-.743.556.838.838,0,0,1-.1,0"
+                    transform="translate(-362.016 -241.333)"
+                    fill="#fff"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Chatbox Overlay and Chatbox -->
+    <div
+      id="chatboxOverlay"
+      class="fixed inset-0 bg-black/50 z-[101] opacity-0 invisible transition-all duration-300 ease-in-out"
+    >
+      <div
+        id="chatbox"
+        class="fixed top-0 right-0 w-full max-w-[400px] h-full bg-white shadow-xl translate-x-full transition-transform duration-300 ease-in-out z-[102] flex flex-col"
+      >
+        <div
+          class="flex justify-between items-center p-4 bg-primary-light text-white"
+        >
+          <h3 class="text-xl font-semibold">Chat with Us</h3>
+          <button
+            id="chatboxCloseButton"
+            class="bg-transparent border-none text-white text-2xl cursor-pointer p-2 rounded-full transition-colors duration-200 ease-in-out"
+          >
+            &times;
+          </button>
+        </div>
+        <div
+          id="chatboxBody"
+          class="flex-grow p-4 overflow-y-auto bg-gray-50 flex flex-col justify-end"
+        >
+          <!-- Chat messages will be appended here -->
+          <div class="bg-gray-200 p-3 rounded-lg mb-2 max-w-[80%] self-start">
+            Hello! How can I help you today?
+          </div>
+          <div
+            class="bg-primary-light text-white p-3 rounded-lg mb-2 max-w-[80%] self-end"
+          >
+            Hi there! I have a question about your services.
+          </div>
+        </div>
+        <div class="p-4 border-t border-gray-200 bg-white flex gap-2">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message..."
+            class="flex-grow p-3 border border-gray-300 rounded-lg text-base"
+          />
+          <button
+            id="sendMessageButton"
+            class="bg-primary-light text-white py-3 px-4 rounded-lg border-none cursor-pointer transition-colors duration-200 ease-in-out hover:bg-primary-light"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- box end -->
 
     <!-- main start -->
     <main>
       <!-- banner start -->
       <section
-        class="banner min-h-[920px] flex items-center justify-center"
+        class="banner min-h-[920px] flex items-center justify-center -mt-[110px] relative"
         style="
           background: url('./img/hero-banner.jpg') center center / cover
             no-repeat;
         "
       >
-        <div class="w-full lg:max-w-[888px] mx-auto px-6">
+        <div class="w-full max-w-[932px] lg:max-w-[888px] mx-auto px-6">
           <h1
-            class="text-white text-4xl lg:text-[72px] font-light leading-tight mt-20 text-center"
+            class="text-white text-[48px] lg:text-[72px] font-light leading-tight mt-20 text-center"
           >
             Sicher betreut zu Hause leben – Individuell und vorausschauend
           </h1>
         </div>
+        <div
+          class="absolute bottom-6 left-6 lg:bottom-[40px] lg:left-[40px] pointer-events-none select-none"
+        >
+          <img src="./img/header-lft.png" alt="" class="max-w-[129px]" />
+        </div>
       </section>
       <!-- banner end -->
       <!-- support start -->
-      <section class="support pt-[96px] pb-[64px]">
-        <div class="w-full lg:max-w-[880px] mx-auto">
-          <h2
-            class="text-primary-dark text-3xl lg:text-5xl font-light leading-12"
-          >
+      <section class="support py-[40px] lg:pt-[96px] lg:pb-[64px]">
+        <div class="w-full lg:max-w-[880px] mx-auto px-6">
+          <h2 class="text-primary-dark text-[40px] font-light leading-12">
             Im eigenen Zuhause betreut werden – mit Unterstützung, die passt.
           </h2>
           <p
-            class="text-black-text text-base lg:text-[22px] leading-8 mt-10.5 font-normal"
+            class="text-black-text text-lg lg:text-[22px] leading-8 mt-[26px] lg:mt-10.5 font-normal"
           >
             Die vertraute Umgebung ist oft der beste Ort, um gut betreut alt zu
             werden. Unsere 24h-Betreuung ermöglicht Senior:innen ein sicheres,
@@ -61,12 +685,1107 @@
         </div>
       </section>
       <!-- support end -->
+      <!-- care start -->
+      <section class="support">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 lg:gap-8 mnin-h-[781px] lg:min-h-[906px]"
+        >
+          <!-- 1 -->
+          <div
+            class="px-[32px] py-[64px] lg:p-[80px] h-full bg-white rounded-xl flex flex-col items-center justify-between w-full shadow-md gap-[41px]"
+          >
+            <div class="flex flex-col items-center">
+              <p
+                class="text-black text-base lg:text-lg text-center leading-6 font-normal"
+              >
+                24h Betreuung im eigenen Zuhause
+              </p>
+              <h4
+                class="text-[26px] lg:text-[32px] text-primary-light font-light leading-[46px] py-[17px] lg:py-[25px] text-center"
+              >
+                2 Wochen Schnuppern
+              </h4>
+              <h3
+                class="text-black text-[44px] md:text-[38px] lg:text-[48px] leading-[64px] text-center"
+              >
+                <sup class="text-2xl md:text-xl lg:text-[28px] font-light"
+                  >CHF</sup
+                >
+                <span class="font-normal">4450</span>
+                <sub class="text-2xl md:text-xl lg:text-[28px] font-light"
+                  >/2 Wochen</sub
+                >
+              </h3>
+              <div
+                class="h-[1px] w-full bg-primary-light mt-[32px] mb-[32px] lg:mb-[40px]"
+              ></div>
+              <ul class="space-y-[17px]">
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Unkompliziert testen
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    6* Tage pro Woche, 24h pro Tag
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Persönliche Auswahl der Betreuung (z.B. Sprache)
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Nach dem Schnuppern ist eine ununterbrochene Weiterbetreuung
+                    möglich
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    24h Notfall Hotline
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full space-y-[15px]">
+              <a
+                href="#"
+                class="block w-full text-lg font-bold bg-primary-light hover:bg-black text-white py-[18px] px-6 rounded-full text-center"
+              >
+                mehr erfahren
+              </a>
+              <a
+                href="#"
+                class="block w-full text-lg font-bold bg-primary-dark hover:bg-black text-white py-[18px] px-6 rounded-full text-center"
+                >Betreuungsperson finden
+              </a>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="px-[32px] py-[64px] lg:p-[80px] h-full bg-white rounded-xl flex flex-col items-center justify-between w-full gap-[41px] shadow-md"
+          >
+            <div class="flex flex-col items-center">
+              <p
+                class="text-black text-base lg:text-lg text-center leading-6 font-normal"
+              >
+                24h Betreuung im eigenen Zuhause
+              </p>
+              <h4
+                class="text-[26px] lg:text-[32px] text-primary-light font-light leading-[46px] py-[17px] lg:py-[25px] text-center"
+              >
+                Flexible 24h-Betreuung
+              </h4>
+              <h3
+                class="text-black text-[44px] md:text-[38px] lg:text-[48px] leading-[64px] text-center"
+              >
+                <sup class="text-2xl md:text-xl lg:text-[28px] font-light"
+                  >CHF</sup
+                >
+                <span class="font-normal">8800</span>
+                <sub class="text-2xl md:text-xl lg:text-[28px] font-light"
+                  >/Monat</sub
+                >
+              </h3>
+              <div
+                class="h-[1px] w-full bg-primary-light mt-[32px] mb-[32px] lg:mb-[40px]"
+              ></div>
+              <ul class="space-y-[17px]">
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Mindestlaufzeit: 1 Monate
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    1 Monat Kündigungsfrist
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    6* Tage pro Woche, 24h pro Tag
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Persönliche Auswahl der Betreuung (z.B. Sprache)
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Ersatzgarantie bei Ausfall oder Unzufriedenheit
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    Abklärung Kostenübernahme durch Sozialversicherung und
+                    Krankenkasse
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <img
+                    src="./img/check.svg"
+                    alt="check"
+                    class="w-[21px] h-[21px]"
+                  />
+                  <p class="text-black-text text-lg font-normal leading-6">
+                    24h Notfall Hotline
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full space-y-[15px]">
+              <a
+                href="#"
+                class="block w-full text-lg font-bold bg-primary-light hover:bg-black text-white py-[18px] px-6 rounded-full text-center"
+              >
+                mehr erfahren
+              </a>
+              <a
+                href="#"
+                class="block w-full text-lg font-bold bg-primary-dark hover:bg-black text-white py-[18px] px-6 rounded-full text-center"
+                >Betreuungsperson finden
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- care end -->
+      <!-- star start -->
+      <section class="star py-[104px] lg:pt-[70px] lg:pb-[60px]">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[104px] md:gap-x-12 md:gap-y-[104px] lg:gap-12 min-h-[273px] lg:min-h-[387px]"
+        >
+          <!-- item 1 -->
+          <div
+            class="bg-white pt-[56px] px-[32px] pb-[33px] flex flex-col justify-start items-center relative rounded-lg shadow-md gap-[46px]"
+          >
+            <div
+              class="absolute top-[-36px] left-1/2 transform -translate-x-1/2"
+            >
+              <img
+                src="./img/starts.png"
+                alt="starts"
+                class="w-[80px] h-[80px]"
+              />
+            </div>
+            <h3
+              class="text-primary-light text-[22px] font-light leading-[30px] text-center"
+            >
+              Vermeidung von einer Verlegung in ein Alters- oder Pflegeheim
+            </h3>
+            <p
+              class="text-black-text text-lg font-normal leading-7 text-center"
+            >
+              Betreuung zu Hause ist eine echte Alternative – besonders für
+              Menschen, die in ihrem gewohnten Umfeld alt werden möchten. Damit
+              ist es möglich, dass ein Gang in Altersheim oder in ein Pflegeheim
+              vermieden werden kann.
+            </p>
+          </div>
+          <!-- item 2 -->
+          <div
+            class="bg-white pt-[56px] px-[32px] pb-[33px] flex flex-col justify-start items-center relative rounded-lg shadow-md gap-[46px]"
+          >
+            <div
+              class="absolute top-[-36px] left-1/2 transform -translate-x-1/2"
+            >
+              <img
+                src="./img/starts.png"
+                alt="starts"
+                class="w-[80px] h-[80px]"
+              />
+            </div>
+            <h3
+              class="text-primary-light text-[22px] font-light leading-[30px] text-center"
+            >
+              Selbstbestimmt statt institutionell
+            </h3>
+            <p
+              class="text-black-text text-lg font-normal leading-7 text-center"
+            >
+              Tagesabläufe, Gewohnheiten und Vorlieben bleiben erhalten – kein
+              anonymer Schichtbetrieb, sondern persönliche eins-zu-ein
+              Betreuung.
+            </p>
+          </div>
+          <!-- item 3 -->
+          <div
+            class="bg-white pt-[56px] px-[32px] pb-[33px] flex flex-col justify-start items-center relative rounded-lg shadow-md gap-[46px]"
+          >
+            <div
+              class="absolute top-[-36px] left-1/2 transform -translate-x-1/2"
+            >
+              <img
+                src="./img/starts.png"
+                alt="starts"
+                class="w-[80px] h-[80px]"
+              />
+            </div>
+            <h3
+              class="text-primary-light text-[22px] font-light leading-[30px] text-center"
+            >
+              Flexible Betreuung je nach Bedarf
+            </h3>
+            <p
+              class="text-black-text text-lg font-normal leading-7 text-center"
+            >
+              Ob als Übergangslösung nach einem Spitalaufenthalt oder als
+              langfristige Unterstützung – wir passen die Betreuung individuell
+              an. Bereits ab zwei Wochen kann unser Modell zum Einsatz kommen,
+              selbstverständlich auch über mehrere Jahre.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- star end -->
+      <!-- range start -->
+      <section class="range">
+        <div class="container mx-auto">
+          <!-- range content -->
+          <div
+            class="w-full lg:min-h-[800px] bg-white rounded-lg shadow-md p-4 lg:p-8"
+          >
+            <img src="./img/range.png" alt="" class="w-full" />
+          </div>
+        </div>
+      </section>
+      <!-- range end -->
+      <!-- suitable start -->
+      <section class="suitable py-[104px] lg:py-[128px]">
+        <div class="w-full lg:max-w-[1200px] mx-auto md:px-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-stretch md:rounded-lg bg-primary-light md:min-h-[500px] lg:min-h-[600px] overflow-hidden shadow-md"
+          >
+            <!-- Content side -->
+            <div
+              class="w-full md:w-1/2 flex flex-col items-start justify-center p-0 md:p-10 lg:p-16 order-2 md:order-1 py-[36px] px-6"
+            >
+              <!-- Your content here -->
+              <h3 class="text-white text-sm font-medium">
+                Sicher und selbstbestimmt zu Hause leben – auch im Alter
+              </h3>
+              <h2
+                class="text-white text-[28px] lg:text-[34px] font-light leading-[38px] lg:leading-[44px] pt-[8px] pb-[24px] lg:pb-[32px]"
+              >
+                Was genau bedeutet Betreuung zu Hause – und passt das zu uns?
+              </h2>
+              <a
+                href="#"
+                class="py-[14px] px-[16px] rounded-sm text-primary-light hover:text-white text-sm font-medium bg-white hover:bg-transparent transition-colors flex items-center gap-[14px] border border-white group"
+              >
+                mehr erfahren
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="4.571"
+                    height="8"
+                    viewBox="0 0 4.571 8"
+                    class="group-hover:fill-white transition-colors duration-300 fill-primary-light"
+                  >
+                    <path
+                      id="Path_459"
+                      data-name="Path 459"
+                      d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                      transform="translate(-63.925 -31.925)"
+                      fill="currentColor"
+                    />
+                  </svg></div
+              ></a>
+            </div>
+
+            <!-- Image side -->
+            <div
+              class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-0 order-1 md:order-2"
+              style="background-image: url('./img/suitable.png')"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- suitable end -->
+      <!-- life start -->
+      <section class="life">
+        <div class="w-full lg:max-w-[880px] mx-auto px-6 space-y-[42px]">
+          <h2
+            class="text-primary-light text-[28px] lg:text-[40px] font-light leading-[32px] lg:leading-12"
+          >
+            24-Stunden-Betreuung, die zum Leben passt.
+          </h2>
+          <!-- life content -->
+          <div class="flex flex-col gap-[53px] md:gap-[32px]">
+            <!-- Section Block -->
+            <div class="flex flex-col md:flex-row gap-3 md:gap-[32px]">
+              <!-- Left -->
+              <div
+                class="md:w-2/5 flex flex-col md:flex-row items-start gap-3 md:gap-4"
+              >
+                <img src="./img/star-white.svg" alt="star" class="w-12 h-12" />
+                <h4 class="text-black text-2xl font-light leading-8">
+                  Selbstbestimmt leben – mit 24-Stunden-Betreuung zu Hause
+                </h4>
+              </div>
+              <!-- Right -->
+              <div class="md:w-3/5">
+                <p class="text-black-text text-lg font-normal leading-7">
+                  Zuhause alt werden – mit Menschen, die da sind, wenn es darauf
+                  ankommt. Unsere 24-Stunden-Betreuung ermöglicht Seniorinnen
+                  und Senioren ein sicheres und würdevolles Leben im vertrauten
+                  Umfeld. Eine einfühlsame Betreuungsperson wohnt bei Ihnen zu
+                  Hause, begleitet Sie im Alltag und wird – wenn gewünscht –
+                  durch Spitex oder Angehörige ergänzt. So entsteht ein stabiles
+                  Betreuungssystem, das individuell abgestimmt ist und im Alltag
+                  wirklich entlastet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex flex-col md:flex-row gap-0 md:gap-[32px]">
+              <div class="md:w-2/5"></div>
+              <div class="md:w-3/5">
+                <div class="h-px w-full bg-primary-dark"></div>
+              </div>
+            </div>
+
+            <!-- Section Block Duplicate (you can loop this dynamically) -->
+            <div class="flex flex-col md:flex-row gap-3 md:gap-[32px]">
+              <!-- Left -->
+              <div
+                class="md:w-2/5 flex flex-col md:flex-row items-start gap-3 md:gap-4"
+              >
+                <img src="./img/star-white.svg" alt="star" class="w-12 h-12" />
+                <h4 class="text-black text-2xl font-light leading-8">
+                  Persönlich, engagiert, verlässlich
+                </h4>
+              </div>
+              <!-- Right -->
+              <div class="md:w-3/5">
+                <p class="text-black-text text-lg font-normal leading-7">
+                  Bei uns steht der Mensch im Mittelpunkt – nicht die
+                  Organisation. Betreuung zu Hause mit Pflegehilfe Schweiz
+                  bedeutet mehr als die Vermittlung von Betreuungspersonal. Wir
+                  begleiten Sie persönlich, nehmen uns Zeit für Ihre Situation
+                  und sorgen dafür, dass die Betreuung nicht nur fachlich,
+                  sondern auch menschlich passt. Denn ein gutes Zuhause im Alter
+                  beginnt mit einem verlässlichen Miteinander – Tag für Tag.
+                </p>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div class="flex flex-col md:flex-row gap-0 md:gap-[32px]">
+              <div class="md:w-2/5"></div>
+              <div class="md:w-3/5">
+                <div class="h-px w-full bg-primary-dark"></div>
+              </div>
+            </div>
+
+            <!-- Section Block Duplicate (you can loop this dynamically) -->
+            <div class="flex flex-col md:flex-row gap-3 md:gap-[32px]">
+              <!-- Left -->
+              <div
+                class="md:w-2/5 flex flex-col md:flex-row items-start gap-3 md:gap-4"
+              >
+                <img src="./img/star-white.svg" alt="star" class="w-12 h-12" />
+                <h4 class="text-black text-2xl font-light leading-8">
+                  Die passende Betreuung – einfach und fundiert gefunden
+                </h4>
+              </div>
+              <!-- Right -->
+              <div class="md:w-3/5">
+                <p class="text-black-text text-lg font-normal leading-7">
+                  Wer Betreuung sucht, soll nicht lange suchen müssen. Dank
+                  unseres grossen Netzwerks finden wir schnell und gezielt die
+                  passende Betreuungsperson für Sie oder Ihre Angehörigen. Alle
+                  unsere Betreuerinnen werden sorgfältig geprüft, verfügen über
+                  Erfahrung und bringen das mit, was in dieser Aufgabe zählt:
+                  Kompetenz, Empathie und Verlässlichkeit. So stellen wir
+                  sicher, dass Sie die Unterstützung erhalten, die wirklich
+                  passt – auf Dauer oder zur Überbrückung.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- life end -->
+      <!-- valuable start -->
+      <section class="valuable pt-[129px]">
+        <div class="container">
+          <h2
+            class="text-primary-light text-[28px] lg:text-[40px] font-light leading-[32px] lg:leading-12"
+          >
+            Warum Betreuung zu Hause so wertvoll ist?
+          </h2>
+          <!-- valuable content -->
+          <div class="space-y-[48px] lg:space-y-[64px] mt-[42px]">
+            <!-- 1 -->
+            <div
+              class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <!-- Image side -->
+              <div
+                class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat lg:min-h-[338px] min-h-[290px]"
+                style="background-image: url('./img/cares-01.png')"
+              ></div>
+              <!-- Content side -->
+              <div
+                class="w-full md:w-1/2 flex flex-col items-start justify-center px-6 py-8 md:p-8 lg:p-16"
+              >
+                <!-- Your content here -->
+                <h3
+                  class="text-primary-dark text-2xl lg:text-[28px] font-light leading-[30px] lg:leading-[38px]"
+                >
+                  Sicherheit im Alter
+                </h3>
+                <p
+                  class="text-black-text text-base font-normal leading-[24px] pt-[13px] pb-[25px]"
+                >
+                  Ein Mensch, der präsent ist, kann Risiken aktiv verhindern.
+                  Unsere Betreuungspersonen helfen, Stürze und andere Vorfälle
+                  zu vermeiden – durch Aufmerksamkeit, Erfahrung und Nähe.
+                </p>
+                <a
+                  href="#"
+                  class="py-[14px] px-[16px] rounded-sm text-white hover:text-primary-light text-sm font-medium bg-primary-light hover:bg-transparent transition-colors flex items-center gap-[14px] border border-primary-light group"
+                >
+                  mehr erfahren
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4.571"
+                      height="8"
+                      viewBox="0 0 4.571 8"
+                      class="group-hover:fill-primary-light transition-colors duration-300 fill-white"
+                    >
+                      <path
+                        id="Path_459"
+                        data-name="Path 459"
+                        d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                        transform="translate(-63.925 -31.925)"
+                        fill="currentColor"
+                      />
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <!-- Image side -->
+              <div
+                class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat lg:min-h-[338px] min-h-[290px] order-1 md:order-2"
+                style="background-image: url('./img/cares-02.png')"
+              ></div>
+              <!-- Content side -->
+              <div
+                class="w-full md:w-1/2 flex flex-col items-start justify-center px-6 py-8 md:p-8 lg:p-16 order-2 md:order-1"
+              >
+                <!-- Your content here -->
+                <h3
+                  class="text-primary-dark text-2xl lg:text-[28px] font-light leading-[30px] lg:leading-[38px]"
+                >
+                  Entlastung für Angehörige
+                </h3>
+                <p
+                  class="text-black-text text-base font-normal leading-[24px] pt-[13px] pb-[25px]"
+                >
+                  Pflege braucht Zeit, Energie und emotionale Stabilität. Unsere
+                  Betreuung zu Hause schafft sofortige Entlastung für Familien –
+                  damit Raum für echte Nähe bleibt.
+                </p>
+                <a
+                  href="#"
+                  class="py-[14px] px-[16px] rounded-sm text-white hover:text-primary-light text-sm font-medium bg-primary-light hover:bg-transparent transition-colors flex items-center gap-[14px] border border-primary-light group"
+                >
+                  mehr erfahren
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4.571"
+                      height="8"
+                      viewBox="0 0 4.571 8"
+                      class="group-hover:fill-primary-light transition-colors duration-300 fill-white"
+                    >
+                      <path
+                        id="Path_459"
+                        data-name="Path 459"
+                        d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                        transform="translate(-63.925 -31.925)"
+                        fill="currentColor"
+                      />
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <!-- Image side -->
+              <div
+                class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat lg:min-h-[338px] min-h-[290px]"
+                style="background-image: url('./img/cares-03.png')"
+              ></div>
+              <!-- Content side -->
+              <div
+                class="w-full md:w-1/2 flex flex-col items-start justify-center px-6 py-8 md:p-8 lg:p-16"
+              >
+                <!-- Your content here -->
+                <h3
+                  class="text-primary-dark text-2xl lg:text-[28px] font-light leading-[30px] lg:leading-[38px]"
+                >
+                  Die Alternative zum Pflegeheim
+                </h3>
+                <p
+                  class="text-black-text text-base font-normal leading-[24px] pt-[13px] pb-[25px]"
+                >
+                  Nicht jede:r fühlt sich in einer Institution wohl. Die
+                  Betreuung im eigenen Zuhause ermöglicht vertrauten Alltag –
+                  oft günstiger und immer persönlicher.
+                </p>
+                <a
+                  href="#"
+                  class="py-[14px] px-[16px] rounded-sm text-white hover:text-primary-light text-sm font-medium bg-primary-light hover:bg-transparent transition-colors flex items-center gap-[14px] border border-primary-light group"
+                >
+                  mehr erfahren
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4.571"
+                      height="8"
+                      viewBox="0 0 4.571 8"
+                      class="group-hover:fill-primary-light transition-colors duration-300 fill-white"
+                    >
+                      <path
+                        id="Path_459"
+                        data-name="Path 459"
+                        d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                        transform="translate(-63.925 -31.925)"
+                        fill="currentColor"
+                      />
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <!-- Image side -->
+              <div
+                class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat lg:min-h-[338px] min-h-[290px] order-1 md:order-2"
+                style="background-image: url('./img/cares-04.png')"
+              ></div>
+              <!-- Content side -->
+              <div
+                class="w-full md:w-1/2 flex flex-col items-start justify-center px-6 py-8 md:p-8 lg:p-16 order-2 md:order-1"
+              >
+                <!-- Your content here -->
+                <h3
+                  class="text-primary-dark text-2xl lg:text-[28px] font-light leading-[30px] lg:leading-[38px]"
+                >
+                  Leben mit Krankheit – aber in Qualität
+                </h3>
+                <p
+                  class="text-black-text text-base font-normal leading-[24px] pt-[13px] pb-[25px]"
+                >
+                  Auch bei chronischen oder altersbedingten Krankheiten bleibt
+                  Lebensfreude möglich. Betreuung zu Hause sorgt dafür, dass
+                  Lieblingsrituale, soziale Kontakte und Hobbies erhalten
+                  bleiben.
+                </p>
+                <a
+                  href="#"
+                  class="py-[14px] px-[16px] rounded-sm text-white hover:text-primary-light text-sm font-medium bg-primary-light hover:bg-transparent transition-colors flex items-center gap-[14px] border border-primary-light group"
+                >
+                  mehr erfahren
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4.571"
+                      height="8"
+                      viewBox="0 0 4.571 8"
+                      class="group-hover:fill-primary-light transition-colors duration-300 fill-white"
+                    >
+                      <path
+                        id="Path_459"
+                        data-name="Path 459"
+                        d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                        transform="translate(-63.925 -31.925)"
+                        fill="currentColor"
+                      />
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <!-- Image side -->
+              <div
+                class="w-full md:w-1/2 bg-cover bg-center bg-no-repeat lg:min-h-[338px] min-h-[290px]"
+                style="background-image: url('./img/cares-05.png')"
+              ></div>
+              <!-- Content side -->
+              <div
+                class="w-full md:w-1/2 flex flex-col items-start justify-center px-6 py-8 md:p-8 lg:p-16"
+              >
+                <!-- Your content here -->
+                <h3
+                  class="text-primary-dark text-2xl lg:text-[28px] font-light leading-[30px] lg:leading-[38px]"
+                >
+                  Begleitung nach Spital oder Reha
+                </h3>
+                <p
+                  class="text-black-text text-base font-normal leading-[24px] pt-[13px] pb-[25px]"
+                >
+                  Der Übergang zurück in den Alltag gelingt nicht von heute auf
+                  morgen. Unsere Betreuung hilft, diese Phase zu überbrücken –
+                  sicher, individuell und temporär.
+                </p>
+                <a
+                  href="#"
+                  class="py-[14px] px-[16px] rounded-sm text-white hover:text-primary-light text-sm font-medium bg-primary-light hover:bg-transparent transition-colors flex items-center gap-[14px] border border-primary-light group"
+                >
+                  mehr erfahren
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4.571"
+                      height="8"
+                      viewBox="0 0 4.571 8"
+                      class="group-hover:fill-primary-light transition-colors duration-300 fill-white"
+                    >
+                      <path
+                        id="Path_459"
+                        data-name="Path 459"
+                        d="M68.328,35.522a.572.572,0,0,1,0,.809L64.9,39.758a.572.572,0,0,1-.809-.809l3.024-3.024L64.094,32.9a.572.572,0,0,1,.809-.809L68.33,35.52Z"
+                        transform="translate(-63.925 -31.925)"
+                        fill="currentColor"
+                      />
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- valuable end -->
+      <!-- review start -->
+      <section class="review pt-32 pb-32 lg:pb-48">
+        <div class="container mx-auto px-6 mb-8">
+          <h2
+            class="text-[#425464] text-[28px] lg:text-[40px] font-light leading-[32px] lg:leading-12 text-center"
+          >
+            Was Kundinnen und Kunden über uns sagen.
+          </h2>
+        </div>
+
+        <div class="relative px-6 lg:px-0">
+          <div class="swiper testimonialsSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div
+                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
+              >
+                <div
+                  class="flex flex-col items-center justify-center text-center h-full"
+                >
+                  <!-- Placeholder for avater.png -->
+                  <img
+                    src="./img/avater.png"
+                    class="w-[160px] h-[160px] rounded-full"
+                    alt="Avatar"
+                  />
+                  <h3
+                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  >
+                    «Endlich konnte ich mich als Sohn wieder Sohn fühlen – nicht
+                    nur Pflegender.»
+                  </h3>
+                  <p class="text-base text-black leading-[26px]">
+                    Hansueli Gerber, Bern
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div
+                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
+              >
+                <div
+                  class="flex flex-col items-center justify-center text-center h-full"
+                >
+                  <!-- Placeholder for avater-1.png -->
+                  <img
+                    src="./img/avater-1.png"
+                    class="w-[160px] h-[160px] rounded-full"
+                    alt="Avatar"
+                  />
+                  <h3
+                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  >
+                    «Die Betreuung war menschlich und professionell – genau das,
+                    was wir gebraucht haben.»
+                  </h3>
+                  <p class="text-base text-black leading-[26px]">
+                    Peter Amstutz, Zürich
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div
+                class="swiper-slide w-[90%] sm:w-[80%] lg:w-[70%] max-w-[820px] mx-auto rounded-lg bg-white p-8 lg:p-16 shadow flex flex-col items-center justify-center text-center h-full"
+              >
+                <div
+                  class="flex flex-col items-center justify-center text-center h-full"
+                >
+                  <!-- Placeholder for avater-2.png -->
+                  <img
+                    src="./img/avater-2.png"
+                    class="w-[160px] h-[160px] rounded-full"
+                    alt="Avatar"
+                  />
+                  <h3
+                    class="text-2xl lg:text-[32px] font-light mt-8 mb-3 leading-[32px] lg:leading-[42px]"
+                  >
+                    «Wir waren anfangs skeptisch – heute sind wir einfach nur
+                    dankbar.»
+                  </h3>
+                  <p class="text-base text-black leading-[26px]">
+                    Familie Meyer, Zürich
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div
+          class="custom-pagination mt-6 flex items-center justify-center gap-1"
+        ></div>
+      </section>
+
+      <!-- review end -->
     </main>
     <!-- main end -->
 
     <!-- footer start -->
+    <footer>
+      <!-- 1 -->
+      <div class="bg-primary-light py-[64px] lg:py-[80px]">
+        <div
+          class="container flex flex-col items-center justify-center mx-auto"
+        >
+          <div>
+            <a href="/"
+              ><img
+                src="./img/logo.png"
+                alt="logo"
+                class="w-full max-w-[210px]"
+            /></a>
+          </div>
+          <h2
+            class="text-[40px] text-white font-light max-w-[720px] mx-auto text-center mt-[40px]"
+          >
+            Ihre Fragen sind willkommen – ganz persönlich.
+          </h2>
+          <p
+            class="text-lg lg:text-[22px] text-white font-normal max-w-[720px] mx-auto text-center my-[42px] lg:mt-[34px] lg:mb-[48px]"
+          >
+            Mit unserer Betreuung zu Hause bleibt alles so, wie es sein sollte –
+            oder sogar besser. Möchten Sie mehr erfahren? Unsere Beraterinnen
+            sprechen gerne mit Ihnen über Ihr Anliegen.
+          </p>
+          <ul
+            class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[26px]"
+          >
+            <li>
+              <a
+                href="mailto:"
+                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px] min-w-[300px]"
+                ><div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19.997"
+                    height="14.997"
+                    viewBox="0 0 19.997 14.997"
+                    class="fill-primary-light group-hover:fill-white transition-colors duration-300"
+                  >
+                    <path
+                      id="Path_542"
+                      data-name="Path 542"
+                      d="M2.5,65.875a.627.627,0,0,0-.625.625v.863l6.737,5.53a2.185,2.185,0,0,0,2.777,0l6.733-5.53V66.5a.627.627,0,0,0-.625-.625Zm-.625,3.913V76.5a.627.627,0,0,0,.625.625h15a.627.627,0,0,0,.625-.625v-6.71l-5.546,4.554a4.062,4.062,0,0,1-5.155,0ZM0,66.5A2.5,2.5,0,0,1,2.5,64h15A2.5,2.5,0,0,1,20,66.5v10A2.5,2.5,0,0,1,17.5,79H2.5A2.5,2.5,0,0,1,0,76.5Z"
+                      transform="translate(0 -64)"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                Kontakt aufnehmen</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+41 43 300 51 43"
+                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px]  min-w-[300px]"
+                ><div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19.996"
+                    height="20"
+                    viewBox="0 0 19.996 20"
+                    class="fill-primary-light group-hover:fill-white transition-colors duration-300"
+                  >
+                    <path
+                      id="Path_543"
+                      data-name="Path 543"
+                      d="M14.677,10.759a1.562,1.562,0,0,0-1.824.445l-1.3,1.586A11.975,11.975,0,0,1,7.218,8.451L8.8,7.158a1.556,1.556,0,0,0,.445-1.824L7.37.96A1.559,1.559,0,0,0,5.608.046L1.234.983A1.56,1.56,0,0,0,0,2.51H0a17.5,17.5,0,0,0,15.626,17.4c.383.039.765.07,1.156.086h0c.238.008.473.016.711.016h0a1.56,1.56,0,0,0,1.527-1.234l.937-4.374a1.559,1.559,0,0,0-.914-1.761l-4.374-1.875Zm2.566,7.374A15.626,15.626,0,0,1,1.879,2.764l3.874-.832L7.432,5.854,6.03,7A1.875,1.875,0,0,0,5.6,9.392a13.825,13.825,0,0,0,5.023,5.023,1.875,1.875,0,0,0,2.39-.434l1.148-1.4,3.921,1.679ZM1.875,2.51Z"
+                      transform="translate(0 -0.012)"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                +41 43 300 51 43</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-white text-primary-light py-[18px] text-lg px-[50px] rounded-lg group border border-white hover:bg-transparent hover:text-white transition-colors flex items-center gap-[10px]  min-w-[300px]"
+                ><div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    class="fill-primary-light group-hover:fill-white transition-colors duration-300"
+                  >
+                    <path
+                      id="Path_576"
+                      data-name="Path 576"
+                      d="M2.581,18.125H4.516V20H2.581A2.544,2.544,0,0,1,0,17.5V2.5A2.544,2.544,0,0,1,2.581,0H9.254a2.625,2.625,0,0,1,1.827.73L14.73,4.266a2.462,2.462,0,0,1,.754,1.77v5.84H13.548V6.25H10.323A1.269,1.269,0,0,1,9.032,5V1.875H2.581a.637.637,0,0,0-.645.625v15A.637.637,0,0,0,2.581,18.125ZM7.1,13.75h1.29a2.189,2.189,0,1,1,0,4.375H7.742v1.25a.645.645,0,0,1-1.29,0v-5A.637.637,0,0,1,7.1,13.75Zm1.29,3.125a.938.938,0,1,0,0-1.875H7.742v1.875Zm3.871-3.125h1.29a1.906,1.906,0,0,1,1.935,1.875v2.5A1.906,1.906,0,0,1,13.548,20h-1.29a.637.637,0,0,1-.645-.625v-5A.637.637,0,0,1,12.258,13.75Zm1.29,5a.637.637,0,0,0,.645-.625v-2.5A.637.637,0,0,0,13.548,15H12.9v3.75Zm3.226-4.375a.637.637,0,0,1,.645-.625h1.935a.625.625,0,1,1,0,1.25h-1.29v1.25h1.29a.625.625,0,1,1,0,1.25h-1.29v1.875a.645.645,0,0,1-1.29,0v-5Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                Download Info-Flyer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="bg-primary-dark py-[47px] lg:py-[54px]">
+        <div
+          class="container flex flex-col lg:flex-row items-center justify-between gap-[32px]"
+        >
+          <span class="text-white text-sm font-normal order-2 lg:order-1"
+            >© <span id="year"></span> seniorencare24</span
+          >
+          <ul
+            class="flex flex-col lg:flex-row items-center justify-between gap-[12px] lg:gap-[32px] order-1 lg:order-2"
+          >
+            <li>
+              <a href="#" class="text-white text-sm font-medium"
+                >Betreuung zu Hause</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm font-medium"
+                >Unser Angebot</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm font-medium">Über uns</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm font-medium"
+                >Wissenswertes</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm font-medium">Impressum</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm font-medium">Datenschutz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <!-- footer end -->
+    <script>
+      // Swiper slider initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Swiper for testimonials
+        new Swiper(".testimonialsSwiper", {
+          slidesPerView: "auto",
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 32,
+          autoSlide: 3000,
+          pagination: {
+            el: ".custom-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              spaceBetween: 32,
+            },
+            1024: {
+              spaceBetween: 32,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      // curent year
+      document.getElementById("year").textContent = new Date().getFullYear();
 
+      // preloader
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        // Add animation class
+        preloader.classList.add("hide-preloader");
+
+        // Fade in content
+        // content.classList.remove('opacity-0');
+
+        // Fully remove preloader after animation
+        setTimeout(() => {
+          preloader.remove(); // Or use: preloader.style.display = 'none';
+          document.body.classList.remove("overflow-hidden");
+        }, 800); // Match animation duration
+      });
+      //Header
+      // Reusable Dropdown Logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButtons = document.querySelectorAll("[data-dropdown]");
+        const isTouchDevice =
+          "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+        // ✅ Hover logic (Desktop only)
+        if (!isTouchDevice) {
+          dropdownButtons.forEach((button) => {
+            const parent = button.closest(".dropdown");
+            const menu = parent.querySelector(".dropdown-menu");
+
+            parent.addEventListener("mouseenter", () => {
+              parent.classList.add("showDropdown");
+              menu.classList.add("show");
+            });
+
+            parent.addEventListener("mouseleave", () => {
+              parent.classList.remove("showDropdown");
+              menu.classList.remove("show");
+            });
+          });
+        }
+
+        // ✅ Click logic (Always enabled)
+        document.addEventListener("click", function (e) {
+          const isDropdownBtn = e.target.closest("[data-dropdown]");
+          const isInsideDropdown = e.target.closest(".dropdown");
+          const allMenus = document.querySelectorAll(".dropdown-menu");
+          const allDropdowns = document.querySelectorAll(".dropdown");
+
+          if (isDropdownBtn) {
+            const parent = isDropdownBtn.closest(".dropdown");
+            const menu = parent.querySelector(".dropdown-menu");
+
+            allMenus.forEach((m) => {
+              if (m !== menu) m.classList.remove("show");
+            });
+
+            allDropdowns.forEach((d) => {
+              if (d !== parent) d.classList.remove("showDropdown");
+            });
+
+            parent.classList.toggle("showDropdown");
+            menu.classList.toggle("show");
+          } else if (!isInsideDropdown) {
+            allMenus.forEach((m) => m.classList.remove("show"));
+            allDropdowns.forEach((d) => d.classList.remove("showDropdown"));
+          }
+        });
+      });
+
+      // Mobile Menu Toggle
+      const mobileToggleBtn = document.querySelector(
+        "[data-mobile-menu-toggle]"
+      );
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMobileBtn = document.querySelector("[data-close-mobile]");
+
+      mobileToggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("offcanvas-open");
+      });
+
+      closeMobileBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("offcanvas-open");
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
