@@ -28,7 +28,7 @@
     >
       <!-- desktop nav -->
       <div
-        class="px-6 lg:px-[40px] flex flex-row justify-between gap-5 lg:gap-8 items-center"
+        class="px-6 lg:px-[40px] flex flex-row justify-between gap-5 lg:gap-8 items-center relative"
       >
         <a href="./index.html">
           <!-- Placeholder for logo.png -->
@@ -39,7 +39,7 @@
           />
         </a>
 
-        <div class="lg:hidden">
+        <div class="xl:hidden">
           <button
             class="justify-center text-text-body-primary text-xs font-medium font-Inter leading-none text-center flex flex-col gap-1"
             data-mobile-menu-toggle=""
@@ -71,14 +71,14 @@
           </button>
         </div>
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex space-x-4 items-center">
+        <nav class="hidden xl:flex space-x-4 items-center">
           <ul class="flex flex-row gap-5 lg:gap-[40px] items-center">
-            <li class="relative dropdown transition-all">
+            <li class="dropdown transition-all">
               <button
-                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-lg"
                 data-dropdown
               >
-                Sector salud
+                Betreuung zu Hause
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -97,40 +97,202 @@
                 </svg>
               </button>
               <div
-                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+                class="dropdown-menu dropdown-content absolute top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-80px)] p-16 h-[782px] bg-primary-light rounded-lg shadow-custom transition-all z-50"
               >
-                <ul class="flex flex-col">
-                  <li>
-                    <a
-                      href="./systems.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 1
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="./partner.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 2
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./call-center.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 3
-                    </a>
-                  </li>
-                </ul>
+                <div class="grid grid-cols-3 gap-[72px]">
+                  <!-- 1 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ihr Bedarf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Im Alter sicher zu Hause
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Familie entlasten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Gut leben mit Krankheit
+                      </a>
+                      <ul class="flex flex-col ml-12">
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Im Alter sicher zu Hause
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Familie entlasten
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Gut leben mit Krankheit
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Alternativen zum Altersheim
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Nach Spital oder Reha
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Alternativen zum Altersheim
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Nach Spital oder Reha
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 2 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ablauf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Ablauf & nächste Schritte
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Betreuung zu Hause erklärt
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Rund-um-die-Uhr-Betreuung
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Das sagen unsere Kunden
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Philosophie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Mehr über Betreuungspersonen
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 3 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Finanzierung
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Kosten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Finanzielle Hilfe
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Zuhause vs. Alters- oder Pflegeheim
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-            <li class="relative dropdown transition-all">
+            <li class="dropdown transition-all">
               <button
-                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-lg"
                 data-dropdown
               >
                 Unser Angebot
@@ -152,40 +314,202 @@
                 </svg>
               </button>
               <div
-                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+                class="dropdown-menu dropdown-content absolute top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-80px)] p-16 h-[782px] bg-primary-light rounded-lg shadow-custom transition-all z-50"
               >
-                <ul class="flex flex-col">
-                  <li>
-                    <a
-                      href="./systems.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 1
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="./partner.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 2
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./call-center.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 3
-                    </a>
-                  </li>
-                </ul>
+                <div class="grid grid-cols-3 gap-[72px]">
+                  <!-- 1 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ihr Bedarf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Im Alter sicher zu Hause
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Familie entlasten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Gut leben mit Krankheit
+                      </a>
+                      <ul class="flex flex-col ml-12">
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Im Alter sicher zu Hause
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Familie entlasten
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Gut leben mit Krankheit
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Alternativen zum Altersheim
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Nach Spital oder Reha
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Alternativen zum Altersheim
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Nach Spital oder Reha
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 2 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ablauf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Ablauf & nächste Schritte
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Betreuung zu Hause erklärt
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Rund-um-die-Uhr-Betreuung
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Das sagen unsere Kunden
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Philosophie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Mehr über Betreuungspersonen
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 3 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Finanzierung
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Kosten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Finanzielle Hilfe
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Zuhause vs. Alters- oder Pflegeheim
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-            <li class="relative dropdown transition-all">
+            <li class="dropdown transition-all">
               <button
-                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-lg"
                 data-dropdown
               >
                 Über uns
@@ -207,40 +531,202 @@
                 </svg>
               </button>
               <div
-                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+                class="dropdown-menu dropdown-content absolute top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-80px)] p-16 h-[782px] bg-primary-light rounded-lg shadow-custom transition-all z-50"
               >
-                <ul class="flex flex-col">
-                  <li>
-                    <a
-                      href="./systems.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 1
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="./partner.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 2
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./call-center.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 3
-                    </a>
-                  </li>
-                </ul>
+                <div class="grid grid-cols-3 gap-[72px]">
+                  <!-- 1 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ihr Bedarf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Im Alter sicher zu Hause
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Familie entlasten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Gut leben mit Krankheit
+                      </a>
+                      <ul class="flex flex-col ml-12">
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Im Alter sicher zu Hause
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Familie entlasten
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Gut leben mit Krankheit
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Alternativen zum Altersheim
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Nach Spital oder Reha
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Alternativen zum Altersheim
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Nach Spital oder Reha
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 2 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ablauf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Ablauf & nächste Schritte
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Betreuung zu Hause erklärt
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Rund-um-die-Uhr-Betreuung
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Das sagen unsere Kunden
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Philosophie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Mehr über Betreuungspersonen
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 3 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Finanzierung
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Kosten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Finanzielle Hilfe
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Zuhause vs. Alters- oder Pflegeheim
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-            <li class="relative dropdown transition-all">
+            <li class="dropdown transition-all">
               <button
-                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-md"
+                class="dropdown-toggle flex justify-center items-center transition-all cursor-pointer text-white text-base lg:text-xl font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-light rounded-lg"
                 data-dropdown
               >
                 Wissenswertes
@@ -262,35 +748,197 @@
                 </svg>
               </button>
               <div
-                class="dropdown-menu dropdown-content transition-all right-0 w-[250px] p-3 bg-primary-light rounded-xl shadow-custom absolute"
+                class="dropdown-menu dropdown-content absolute top-16 left-1/2 -translate-x-1/2 w-[calc(100vw-80px)] p-16 h-[782px] bg-primary-light rounded-lg shadow-custom transition-all z-50"
               >
-                <ul class="flex flex-col">
-                  <li>
-                    <a
-                      href="./systems.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 1
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="./partner.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 2
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="./call-center.html"
-                      class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                    >
-                      demo 3
-                    </a>
-                  </li>
-                </ul>
+                <div class="grid grid-cols-3 gap-[72px]">
+                  <!-- 1 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ihr Bedarf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Im Alter sicher zu Hause
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Familie entlasten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Gut leben mit Krankheit
+                      </a>
+                      <ul class="flex flex-col ml-12">
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Im Alter sicher zu Hause
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Familie entlasten
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Gut leben mit Krankheit
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Alternativen zum Altersheim
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Nach Spital oder Reha
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Alternativen zum Altersheim
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./call-center.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Nach Spital oder Reha
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 2 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Ablauf
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Ablauf & nächste Schritte
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Betreuung zu Hause erklärt
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Rund-um-die-Uhr-Betreuung
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Das sagen unsere Kunden
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Philosophie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Mehr über Betreuungspersonen
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 3 -->
+                  <ul class="flex flex-col">
+                    <div class="w-full">
+                      <h4
+                        class="text-white text-xl lg:text-[26px] font-medium p-3"
+                      >
+                        Finanzierung
+                      </h4>
+                      <div class="w-full h-[1px] bg-white mb-[32px] pl-3"></div>
+                    </div>
+                    <li>
+                      <a
+                        href="./systems.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Unsere Kosten
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Finanzielle Hilfe
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./partner.html"
+                        class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                      >
+                        Zuhause vs. Alters- oder Pflegeheim
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
 
@@ -315,7 +963,7 @@
 
       <!-- Mobile Offcanvas Menu -->
       <div
-        class="offcanvas fixed inset-0 bg-primary-light bg-opacity-50 h-screen overflow-y-auto z-50 lg:hidden"
+        class="offcanvas fixed inset-0 bg-primary-light bg-opacity-50 h-screen overflow-y-auto z-50 xl:hidden"
         id="mobileMenu"
       >
         <div class="bg-primary-light w-full max-w-full h-full py-4 relative">
@@ -368,147 +1016,177 @@
                   <div
                     class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
                   >
-                    <ul class="flex flex-col">
-                      <li>
-                        <a
-                          href="./systems.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 1
-                        </a>
-                      </li>
+                    <div class="flex flex-col gap-[24px]">
+                      <!-- 1 -->
+                      <ul class="flex flex-col">
+                        <div class="w-full">
+                          <h4 class="text-white text-base font-medium p-3">
+                            Ihr Bedarf
+                          </h4>
+                          <div class="w-full h-[1px] bg-white mb-4 pl-3"></div>
+                        </div>
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Im Alter sicher zu Hause
+                          </a>
+                        </li>
 
-                      <li>
-                        <a
-                          href="./partner.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 2
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="./call-center.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 3
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="relative dropdown transition-all flex flex-col justify-start"
-                >
-                  <button
-                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
-                    data-dropdown
-                  >
-                    Unser Angebot
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      class="transition-all"
-                    >
-                      <path
-                        d="M4 6L8 10L12 6"
-                        stroke="#fff"
-                        stroke-width="1.75"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
-                  >
-                    <ul class="flex flex-col">
-                      <li>
-                        <a
-                          href="./systems.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 1
-                        </a>
-                      </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Familie entlasten
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./call-center.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Gut leben mit Krankheit
+                          </a>
+                          <ul class="flex flex-col pl-4">
+                            <li>
+                              <a
+                                href="./systems.html"
+                                class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                              >
+                                Hilfe bei Demenz und Alzheimer
+                              </a>
+                            </li>
 
-                      <li>
-                        <a
-                          href="./partner.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 2
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="./call-center.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 3
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="relative dropdown transition-all flex flex-col justify-start"
-                >
-                  <button
-                    class="dropdown-toggle flex justify-start items-center transition-all cursor-pointer text-white text-base lg:text-lg font-medium leading-7 px-1.5 py-1 gap-1 hover:text-primary-dark rounded-md"
-                    data-dropdown
-                  >
-                    Über uns
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      class="transition-all"
-                    >
-                      <path
-                        d="M4 6L8 10L12 6"
-                        stroke="#fff"
-                        stroke-width="1.75"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    class="dropdown-menu dropdown-content transition-all w-full p-3 rounded-xl"
-                  >
-                    <ul class="flex flex-col">
-                      <li>
-                        <a
-                          href="./systems.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 1
-                        </a>
-                      </li>
+                            <li>
+                              <a
+                                href="./partner.html"
+                                class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                              >
+                                Hilfe bei Muskel und Nervenkrankheiten
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="./call-center.html"
+                                class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                              >
+                                Eingeschränkte Mobilität
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Alternativen zum Altersheim
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Nach Spital oder Reha
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- 2 -->
+                      <ul class="flex flex-col">
+                        <div class="w-full">
+                          <h4 class="text-white text-base font-medium p-3">
+                            Ablauf
+                          </h4>
+                          <div class="w-full h-[1px] bg-white mb-4 pl-3"></div>
+                        </div>
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Ablauf & nächste Schritte
+                          </a>
+                        </li>
 
-                      <li>
-                        <a
-                          href="./partner.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 2
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="./call-center.html"
-                          class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
-                        >
-                          demo 3
-                        </a>
-                      </li>
-                    </ul>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Betreuung zu Hause erklärt
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Rund-um-die-Uhr-Betreuung
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Das sagen unsere Kunden
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Unsere Philosophie
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Mehr über Betreuungspersonen
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- 3 -->
+                      <ul class="flex flex-col">
+                        <div class="w-full">
+                          <h4 class="text-white text-base font-medium p-3">
+                            Finanzierung
+                          </h4>
+                          <div class="w-full h-[1px] bg-white mb-4 pl-3"></div>
+                        </div>
+                        <li>
+                          <a
+                            href="./systems.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Unsere Kosten
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Finanzielle Hilfe
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="./partner.html"
+                            class="flex flex-row gap-3 p-3 hover:bg-primary-dark rounded-lg transition-all duration-300 text-white text-base lg:text-lg font-medium leading-7"
+                          >
+                            Zuhause vs. Alters- oder Pflegeheim
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -647,7 +1325,7 @@
     <main>
       <!-- banner start -->
       <section
-        class="banner min-h-[920px] flex items-center justify-center -mt-[110px] relative"
+        class="banner min-h-[920px] flex items-center justify-center -mt-[140px] 2xl:-mt-[110px] relative"
         style="
           background: url('./img/hero-banner.jpg') center center / cover
             no-repeat;
@@ -1439,7 +2117,7 @@
         </div>
 
         <div class="relative">
-          <div class="splide testimonialsSplide  lg:px-0">
+          <div class="splide testimonialsSplide lg:px-0">
             <div class="splide__track">
               <ul class="splide__list">
                 <li

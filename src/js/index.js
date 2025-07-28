@@ -4,48 +4,97 @@ document.addEventListener("DOMContentLoaded", function () {
   const isTouchDevice =
     "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
+  let hoverTimeout; // Variable to store the timeout for closing the dropdown
+
   // ✅ Hover logic (Desktop only)
   if (!isTouchDevice) {
     dropdownButtons.forEach((button) => {
       const parent = button.closest(".dropdown");
       const menu = parent.querySelector(".dropdown-menu");
 
-      parent.addEventListener("mouseenter", () => {
+      parent.addEventListener("mouseover", () => {
+        clearTimeout(hoverTimeout); // Clear any pending close timeout
         parent.classList.add("showDropdown");
         menu.classList.add("show");
       });
 
-      parent.addEventListener("mouseleave", () => {
-        parent.classList.remove("showDropdown");
-        menu.classList.remove("show");
+      parent.addEventListener("mouseout", (e) => {
+        // Only hide if the mouse actually leaves the whole dropdown
+        if (!parent.contains(e.relatedTarget)) {
+          // Add a small delay before hiding to prevent flickering
+          hoverTimeout = setTimeout(() => {
+            parent.classList.remove("showDropdown");
+            menu.classList.remove("show");
+          }, 150); // 150ms delay, adjust as needed
+        }
       });
     });
   }
 
   // ✅ Click logic (Always enabled)
   document.addEventListener("click", function (e) {
-    const isDropdownBtn = e.target.closest("[data-dropdown]");
-    const isInsideDropdown = e.target.closest(".dropdown");
     const allMenus = document.querySelectorAll(".dropdown-menu");
     const allDropdowns = document.querySelectorAll(".dropdown");
+    const isDropdownBtn = e.target.closest("[data-dropdown]");
+
+    let clickedOnActiveDropdownComponent = false;
+
+    // Check if the click was on an active dropdown's button or its content (ul)
+    allDropdowns.forEach((dropdown) => {
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const toggle = dropdown.querySelector("[data-dropdown]");
+      if (menu && menu.classList.contains("show")) {
+        // If this dropdown is currently open
+        if (
+          toggle.contains(e.target) ||
+          (menu.querySelector("ul") &&
+            menu.querySelector("ul").contains(e.target))
+        ) {
+          clickedOnActiveDropdownComponent = true;
+        }
+      }
+    });
 
     if (isDropdownBtn) {
+      // If a dropdown button was clicked, handle its toggle
       const parent = isDropdownBtn.closest(".dropdown");
       const menu = parent.querySelector(".dropdown-menu");
 
+      // Close all other active dropdowns
       allMenus.forEach((m) => {
         if (m !== menu) m.classList.remove("show");
       });
-
       allDropdowns.forEach((d) => {
         if (d !== parent) d.classList.remove("showDropdown");
       });
 
+      // Toggle the current dropdown
       parent.classList.toggle("showDropdown");
       menu.classList.toggle("show");
-    } else if (!isInsideDropdown) {
+    } else if (!clickedOnActiveDropdownComponent) {
+      // If no dropdown button was clicked AND the click was not inside an active dropdown's button or content,
+      // then close all dropdowns. This will include clicks on the overlay itself.
       allMenus.forEach((m) => m.classList.remove("show"));
       allDropdowns.forEach((d) => d.classList.remove("showDropdown"));
+    }
+  });
+
+  // Close dropdowns when Escape key is pressed (added to existing logic)
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      document.querySelectorAll(".dropdown-menu.show").forEach((dropdown) => {
+        dropdown.classList.remove("show");
+        const parentDropdown = dropdown.closest(".dropdown");
+        if (parentDropdown) {
+          parentDropdown.classList.remove("showDropdown");
+        }
+      });
+      // Also close mobile menu if open
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (mobileMenu.classList.contains("offcanvas-open")) {
+        mobileMenu.classList.remove("offcanvas-open");
+        document.body.classList.remove("overflow-hidden");
+      }
     }
   });
 });
@@ -72,6 +121,21 @@ document.addEventListener("DOMContentLoaded", function () {
       if (e.target === mobileMenu) {
         mobileMenu.classList.remove("offcanvas-open");
         document.body.classList.remove("overflow-hidden");
+      }
+    });
+  }
+});
+
+// Sticky header functionality (kept from previous version)
+document.addEventListener("DOMContentLoaded", () => {
+  const mainHeader = document.getElementById("mainHeader");
+  if (mainHeader) {
+    const headerHeight = mainHeader.offsetHeight;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > headerHeight) {
+        mainHeader.classList.add("bg-gray-900", "shadow-lg"); // Add background and shadow
+      } else {
+        mainHeader.classList.remove("bg-gray-900", "shadow-lg");
       }
     });
   }

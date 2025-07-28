@@ -89,23 +89,39 @@ body {
 .splide__slide > div {
   height: 100%;
 }
+/* Styles for the dropdown menu visibility */
+ /* Prevent scrolling on body when mobile menu is open */
+        body.overflow-hidden {
+            overflow: hidden;
+        }
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  pointer-events: none; /* Ensure clicks pass through when hidden */
+}
+
+.dropdown-menu.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto; /* Enable clicks when visible */
+}
+
+/* Rotate SVG arrow when dropdown is active */
+.dropdown-toggle.showDropdown svg {
+  transform: rotate(180deg);
+}
+
+/* Mobile Offcanvas Menu styles */
 .offcanvas {
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.offcanvas-open {
+.offcanvas.offcanvas-open {
   transform: translateX(0);
-}
-
-.dropdown-content {
-  display: none;
-  min-width: 160px;
-  z-index: 10;
-}
-
-.dropdown-content.show {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .shadow-custom {
