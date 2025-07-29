@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       parent.addEventListener("mouseover", () => {
         clearTimeout(hoverTimeout); // Clear any pending close timeout
+        // Close all other active dropdowns before opening a new one
+        document.querySelectorAll(".dropdown-menu.show").forEach((openMenu) => {
+          if (openMenu !== menu) {
+            openMenu.classList.remove("show");
+            openMenu.closest(".dropdown").classList.remove("showDropdown");
+          }
+        });
+
         parent.classList.add("showDropdown");
         menu.classList.add("show");
       });
@@ -47,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // If this dropdown is currently open
         if (
           toggle.contains(e.target) ||
-          (menu.querySelector("ul") &&
-            menu.querySelector("ul").contains(e.target))
+          menu.contains(e.target) // Check if click is inside the menu itself
         ) {
           clickedOnActiveDropdownComponent = true;
         }

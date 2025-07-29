@@ -90,52 +90,83 @@ body {
   height: 100%;
 }
 /* Styles for the dropdown menu visibility */
- /* Prevent scrolling on body when mobile menu is open */
-        body.overflow-hidden {
-            overflow: hidden;
-        }
+/* Prevent scrolling on body when mobile menu is open */
+body.overflow-hidden {
+  overflow: hidden;
+}
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+.text-text-body-primary {
+  color: var(--color-text-body-primary);
+}
+
+/* Dropdown Menu Styles for smooth transition and overflow */
 .dropdown-menu {
-  visibility: hidden;
+  max-height: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  overflow: hidden; /* Hide overflow initially */
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
   pointer-events: none; /* Ensure clicks pass through when hidden */
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.dropdown-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .dropdown-menu.show {
-  visibility: visible;
+  max-height: 782px; /* A large enough value to accommodate content */
   opacity: 1;
+  overflow-y: auto; /* Enable vertical scrolling when shown */
   pointer-events: auto; /* Enable clicks when visible */
 }
 
 /* Rotate SVG arrow when dropdown is active */
 .dropdown-toggle.showDropdown svg {
   transform: rotate(180deg);
+  transition: transform 0.4s ease-in-out; /* Smooth rotation */
 }
 
 /* Mobile Offcanvas Menu styles */
 .offcanvas {
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .offcanvas.offcanvas-open {
   transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
 }
 
+/* Hide scrollbar for mobile menu (Firefox) */
+#mobileMenu .bg-primary-light {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for mobile menu (Webkit) */
+#mobileMenu .bg-primary-light::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom shadow for dropdowns */
 .shadow-custom {
   box-shadow: 0px 12px 16px -4px rgba(10, 13, 18, 0.08),
     0px 4px 6px -2px rgba(10, 13, 18, 0.03),
     0px 2px 2px -1px rgba(10, 13, 18, 0.04);
 }
-.showDropdown button svg {
-  transform: rotate(180deg) !important;
-  transition: all ease-in-out 0.4s;
-}
-.showDropdown .show {
-  display: block !important;
-  transition: all ease 0.6s;
+
+
+/* Specific adjustment for mobile dropdown menu height */
+#mobileMenu .dropdown-menu.show {
+  max-height: 80vh; /* Adjust as needed for mobile view */
 }
 
 /* New CSS for blurred header background */
